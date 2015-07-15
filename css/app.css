@@ -177,9 +177,9 @@ header {
       .element > * {
         opacity: 0; } }
   .element .title {
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     left: 50%;
     top: 20px;
     color: #fff;
@@ -191,6 +191,9 @@ header {
             transition: all 250ms; }
     @media (min-width: 1025px) {
       .element .title {
+        -webkit-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
         top: 60%; } }
   .element .more {
     -webkit-transform: translateX(-50%);
@@ -216,7 +219,7 @@ header {
       width: 100%;
       position: absolute;
       height: 100px;
-      background: #f0f0f1;
+      background: rgba(240, 240, 241, 0.8);
       top: -150px;
       left: 0;
       -webkit-transform: skewY(15deg);
