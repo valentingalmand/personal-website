@@ -1,0 +1,36 @@
+.about--block
+	padding: 10px 0
+	overflow: hidden
+	h2
+		text-transform: uppercase
+		letter-spacing: 1px
+		text-align: center
+		margin-top: 15px
+		&::after
+			content: ''
+			width: 50px
+			height: 1px
+			background: $b
+			display: block
+			margin: 10px auto
+		+sm
+			text-align: right
+			margin-top: 0
+			&::after
+				display: none
+		+md
+			text-align: right
+			margin-top: 0
+			&::after
+				display: none
+	.cat
+		text-align: right
+		+sm
+			border-right: 1px solid
+			padding-right: 30px
+	// ul li p
+	// 	text-indent: 15px
+	// 	+sm
+	// 		content: "- "
+	// 	+md
+	// 		content: "- "

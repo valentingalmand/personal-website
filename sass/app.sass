@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:500,300,400)
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css)
+@import includes/mixins
+
+$n: #28282E
+$b: #f0f0f1
+$r: #a63451
+$d_v: #151324
+$l_v: #2b2858
+$v: #1e1c26
+$fz: 1.5rem
+
+$roboto: 'Roboto', sans-serif
+$playfair: 'Playfair Display', serif
+
+body
+	font-family: $roboto
+	background: $v
+	color: $b
+	font-size: $fz
+	line-height: $fz + 1
+	font-weight: lighter
+a
+	color: $b
+	cursor: pointer
+	text-decoration: none
+	+transition
+	+md
+		&:hover
+			color: $r
+			text-decoration: none
+.link
+	position: relative
+	opacity: 0.8
+	color: $r
+	letter-spacing: 1px
+	font-weight: 300
+	&::after
+		content: ''
+		width: 100%
+		height: 1px
+		position: absolute
+		background: rgba($b, 0.8)
+		bottom: -10px
+		left: 0
+		opacity: 0
+		+transition
+	+md
+		&:hover
+			opacity: 1
+			color: $b
+			&:after
+				bottom: -4px
+				opacity: 1
+section
+	padding: 20px 0
+#transition
+	background: linear-gradient( rgba($v, 1) 0%, rgba($l_v, 0.5) 100%)
+	height: 250px
+.dib
+	display: inline-block
+.button
+	float: right
+	display: inline-block
+	color: $b
+	padding: 5px 10px
+	border: 1px solid
+	text-transform: uppercase
+	font-weight: lighter
+	letter-spacing: 4px
+	font-size: $fz - 0.3
+	overflow: hidden
+	margin: 45px 0
+	position: relative
+	&:after
+		content: ''
+		z-index: -1
+		width: 100%
+		position: absolute
+		height: 100px
+		background: rgba($b, 0.8)
+		top: -150px
+		left: 0
+		transform: skewY(15deg)
+		+transition
+	+md
+		&:hover
+			border-color: $r
+			color: $r
+			box-shadow: 0 10px 20px $d_v
+			transform: translateY(-10px)
+			&:after
+				top: -30px
+
+@import includes/nav, includes/header, includes/work, includes/about, includes/contact, includes/footer

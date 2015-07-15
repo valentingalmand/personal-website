@@ -1,0 +1,14 @@
+=transition
+	transition: all 250ms
+=center
+	position: absolute
+	transform: translateX(-50%) translateY(-50%)
+	left: 50%
+	top: 50%
+=sm
+	@media (min-width: 768px)
+		@content
+
+=md
+	@media (min-width: 1025px)
+		@content

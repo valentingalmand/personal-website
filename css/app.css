@@ -1,0 +1,310 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:500,300,400);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+body {
+  font-family: "Roboto", sans-serif;
+  background: #1e1c26;
+  color: #f0f0f1;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: lighter; }
+
+a {
+  color: #f0f0f1;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 250ms;
+          transition: all 250ms; }
+  @media (min-width: 1025px) {
+    a:hover {
+      color: #a63451;
+      text-decoration: none; } }
+
+.link {
+  position: relative;
+  opacity: 0.8;
+  color: #a63451;
+  letter-spacing: 1px;
+  font-weight: 300; }
+  .link::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: rgba(240, 240, 241, 0.8);
+    bottom: -10px;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
+  @media (min-width: 1025px) {
+    .link:hover {
+      opacity: 1;
+      color: #f0f0f1; }
+      .link:hover:after {
+        bottom: -4px;
+        opacity: 1; } }
+
+section {
+  padding: 20px 0; }
+
+#transition {
+  background: -webkit-linear-gradient(#1e1c26 0%, rgba(43, 40, 88, 0.5) 100%);
+  background: linear-gradient(#1e1c26 0%, rgba(43, 40, 88, 0.5) 100%);
+  height: 250px; }
+
+.dib {
+  display: inline-block; }
+
+.button {
+  float: right;
+  display: inline-block;
+  color: #f0f0f1;
+  padding: 5px 10px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  margin: 45px 0;
+  position: relative; }
+  .button:after {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    background: rgba(240, 240, 241, 0.8);
+    top: -150px;
+    left: 0;
+    -webkit-transform: skewY(15deg);
+        -ms-transform: skewY(15deg);
+            transform: skewY(15deg);
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
+  @media (min-width: 1025px) {
+    .button:hover {
+      border-color: #a63451;
+      color: #a63451;
+      box-shadow: 0 10px 20px #151324;
+      -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+              transform: translateY(-10px); }
+      .button:hover:after {
+        top: -30px; } }
+
+nav {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    nav {
+      text-align: right; } }
+  @media (min-width: 1025px) {
+    nav {
+      text-align: right; } }
+  nav .name {
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem; }
+    @media (min-width: 768px) {
+      nav .name {
+        text-align: left; } }
+    @media (min-width: 1025px) {
+      nav .name {
+        text-align: left; } }
+
+.menu--items {
+  margin: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  list-style: none;
+  -webkit-transition: all 250ms;
+          transition: all 250ms; }
+  @media (min-width: 768px) {
+    .menu--items {
+      padding: 0 20px; } }
+  @media (min-width: 1025px) {
+    .menu--items {
+      padding: 0 20px; } }
+  .menu--items:last-child a {
+    color: #a63451; }
+.menu--link {
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+  @media (min-width: 1025px) {
+    .menu--link:hover {
+      color: #a63451; } }
+
+header {
+  background: -webkit-linear-gradient(top, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
+  background-size: cover;
+  height: 90vh; }
+
+.wrap {
+  position: absolute;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+  text-align: center; }
+  .wrap h1 {
+    font-family: "Playfair";
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.element {
+  height: 240px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 0 0 rgba(21, 19, 36, 0);
+  -webkit-transition: all 250ms;
+          transition: all 250ms; }
+  .element > * {
+    position: absolute;
+    z-index: 10; }
+    @media (min-width: 1025px) {
+      .element > * {
+        opacity: 0; } }
+  .element .title {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    top: 20px;
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
+    @media (min-width: 1025px) {
+      .element .title {
+        top: 0; } }
+  .element .more {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
+    width: 170px;
+    color: #f0f0f1;
+    padding: 5px 10px;
+    border: 1px solid;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    overflow: hidden; }
+    @media (min-width: 1025px) {
+      .element .more {
+        bottom: 0; } }
+    .element .more:after {
+      content: "";
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      height: 100px;
+      background: rgba(240, 240, 241, 0.8);
+      top: -150px;
+      left: 0;
+      -webkit-transform: skewY(15deg);
+          -ms-transform: skewY(15deg);
+              transform: skewY(15deg);
+      -webkit-transition: all 250ms;
+              transition: all 250ms; }
+    @media (min-width: 1025px) {
+      .element .more:hover {
+        border-color: #a63451;
+        color: #a63451;
+        box-shadow: 0 10px 20px #151324;
+        bottom: -10px !important; }
+        .element .more:hover:after {
+          top: -30px; } }
+  .element .background {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
+  @media (min-width: 1025px) {
+    .element:hover {
+      box-shadow: 0 10px 20px #151324; }
+      .element:hover > * {
+        opacity: 1; }
+      .element:hover .title {
+        top: -10px; }
+      .element:hover .more {
+        bottom: -17px; }
+      .element:hover .background {
+        opacity: 0.6; } }
+  .element--one {
+    background: url("https://download.unsplash.com/8/tylerfinck-bwgrass.jpg") no-repeat center center;
+    background-size: cover; }
+  .element--two {
+    background: url("https://download.unsplash.com/7/a-long-walk.jpg") no-repeat center center;
+    background-size: cover; }
+  .element--three {
+    background: url("https://download.unsplash.com/5/pier.JPG") no-repeat center center;
+    background-size: cover; }
+  .element--four {
+    background: url("https://download.unsplash.com/9/bob-van-aubel-ray-bans.jpg") no-repeat center center;
+    background-size: cover; }
+  .element--five {
+    background: url("https://download.unsplash.com/8/tylerfinck-bwgrass.jpg") no-repeat center center;
+    background-size: cover; }
+  .element--six {
+    background: url("https://download.unsplash.com/7/a-long-walk.jpg") no-repeat center center;
+    background-size: cover; }
+
+.about--block {
+  padding: 10px 0;
+  overflow: hidden; }
+  .about--block h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px; }
+    .about--block h2::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background: #f0f0f1;
+      display: block;
+      margin: 10px auto; }
+    @media (min-width: 768px) {
+      .about--block h2 {
+        text-align: right;
+        margin-top: 0; }
+        .about--block h2::after {
+          display: none; } }
+    @media (min-width: 1025px) {
+      .about--block h2 {
+        text-align: right;
+        margin-top: 0; }
+        .about--block h2::after {
+          display: none; } }
+  .about--block .cat {
+    text-align: right; }
+    @media (min-width: 768px) {
+      .about--block .cat {
+        border-right: 1px solid;
+        padding-right: 30px; } }
+
+#contact {
+  text-align: center;
+  background: rgba(43, 40, 88, 0.5);
+  overflow: hidden; }
+  #contact ul {
+    margin-top: 20px; }
