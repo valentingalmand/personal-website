@@ -6,7 +6,9 @@ body {
   color: #f0f0f1;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-weight: lighter; }
+  font-weight: lighter;
+  height: 100%;
+  width: 100%; }
 
 a {
   color: #f0f0f1;
@@ -147,7 +149,10 @@ header {
   background: -webkit-linear-gradient(top, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
   background: linear-gradient(to bottom, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
   background-size: cover;
-  height: 90vh; }
+  height: 220px; }
+  @media (min-width: 1025px) {
+    header {
+      height: 90vh; } }
 
 .wrap {
   position: absolute;
@@ -308,6 +313,7 @@ header {
 #contact {
   text-align: center;
   background: rgba(43, 40, 88, 0.5);
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 30px; }
   #contact ul {
     margin-top: 20px; }
