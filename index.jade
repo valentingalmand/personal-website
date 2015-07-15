@@ -4,25 +4,44 @@
 doctype html
 html
 	head(lang="fr")
-		title Valentin Galmand | Portfolio
+		title Valentin Galmand | Portfolio | Graphiste et Développeur Front End | Bordeaux 
 		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-		meta(name="description", content="Valentin Galmand | Graphiste et Développeur Front End à Bordeaux - 06 49 23 38 16")
+		meta(name="description", content="Valentin Galmand | Graphiste et Développeur Front End à Bordeaux - 06 49 23 38 16 | Passionné par le graphisme print et web, par le développement front-end.")
 		meta(name="keywords", content="design, ui, ux, designer, front end, development, developpeur, html, css, bordeaux, junior, sass, js, wordpress, webdesite, webdesign, designer portfolio, portfolio, france, bordeaux, valentin galmand, galmand")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
 		link(rel="stylesheet", href="css/reset.css", type="text/css")
 		link(rel="stylesheet", href="css/bootstrap.css", type="text/css")
 		link(rel="stylesheet", href="css/font.css", type="text/css")
 		link(rel="stylesheet", href="css/app.css", type="text/css")
+		link(rel="stylesheet", href="css/print.css", type="text/css", media="print")
+		//Favicon
+		link(rel="apple-touch-icon", sizes="57x57", href="/apple-touch-icon-57x57.png")
+		link(rel="apple-touch-icon", sizes="60x60", href="/apple-touch-icon-60x60.png")
+		link(rel="apple-touch-icon", sizes="72x72", href="/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon", sizes="76x76", href="/apple-touch-icon-76x76.png")
+		link(rel="apple-touch-icon", sizes="114x114", href="/apple-touch-icon-114x114.png")
+		link(rel="apple-touch-icon", sizes="120x120", href="/apple-touch-icon-120x120.png")
+		link(rel="apple-touch-icon", sizes="144x144", href="/apple-touch-icon-144x144.png")
+		link(rel="apple-touch-icon", sizes="152x152", href="/apple-touch-icon-152x152.png")
+		link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon-180x180.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
+		link(rel="icon", type="image/png", href="/android-chrome-192x192.png", sizes="192x192")
+		link(rel="icon", type="image/png", href="/favicon-96x96.png", sizes="96x96")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
+		link(rel="manifest", href="/manifest.json")
+		meta(name="msapplication-TileColor", content="#00aba9")
+		meta(name="msapplication-TileImage", content="/mstile-144x144.png")
+		meta(name="theme-color", content="#ffffff")
 	body
 		nav
 			.container
 				.col-md-6
-					p.name Valentin Galmand
+					h1.name Valentin Galmand
 				.col-md-6
 					ul.menu
 					- each val, index in menu
 						li.menu--items.dib
-							a.menu--link(href="#{index}") #{val}
+							a.menu--link(href="#{index}", title="#{val}") #{val}
 		header
 		section#about
 			.container
@@ -31,14 +50,14 @@ html
 						.col-md-2
 							h2 Enchanté !
 						p.col-md-10 Je suis Valentin Galmand, raise and born à Bordeaux comme on dit de l'autre côté de l'Océan Atlantique. Actuellement en deuxième année en 
-							a(href="http://mmibordeaux.com", target='_blank').link DUT MMI
-							| , j'adore essayer, explorer et apprendre de nouvelles choses en particulier sur l'animation d'interface et la magie du HTML mêlée au CSS. Passionné par le graphisme print comme web et au développement front-end, toujours à la recherche de nouvelles expériences. Et si on ajoute du vélo, beaucoup de dessin et d'handwritting saupoudré de trois expositions sans oublier un peu (beaucoup) de séries et de films. Un mix de tout ça et me voilà.
-							a(href="valentingalmand_cv.pdf", target='_blank').button télécharger mon cv
+							a(href="http://mmibordeaux.com", target='_blank', title="Vers le site du DUT MMI Bordeaux").link DUT MMI
+							| , j'adore essayer, explorer et apprendre de nouvelles choses en particulier sur l'animation d'interface et la magie du HTML mêlée au CSS. Passionné par le graphisme print comme web et par le développement front-end, je toujours à la recherche de nouvelles expériences. Si y on ajoute du vélo, beaucoup de dessin et d'handwritting saupoudré de trois expositions sans oublier un peu (beaucoup) de séries et de films. Un mix de tout ça et me voilà.
+							a(href="valentingalmand_cv.pdf", target='_blank', title="Télécharger mon CV").button télécharger mon cv
 					.about--block
 						.col-md-2
 							h2 Compétences
 						.col-md-2.col-xs-5
-							p.cat Développement
+							h4.cat Développement
 						.col-md-3.col-xs-5
 							ul
 								li
@@ -50,7 +69,7 @@ html
 								li
 									p PHP / jQuery
 						.col-md-2.col-xs-5
-							p.cat Design
+							h4.cat Design
 						.col-md-3.col-xs-5
 							ul
 								li
@@ -69,15 +88,15 @@ html
 						.col-md-2
 							h2 Et donc ?
 						p.col-md-10 On peut me retrouver sur 
-							a(href="https://www.linkedin.com/in/valentingalmand", target='_blank').link LinkedIn
+							a(href="https://www.linkedin.com/in/valentingalmand", target='_blank', title="Vers mon profil LinkedIn").link LinkedIn
 							| , 
-							a(href="https://twitter.com/vgalmand", target='_blank').link Twitter
+							a(href="https://twitter.com/vgalmand", target='_blank', title="Vers mon profil Twitter").link Twitter
 							| , 
-							a(href="https://dribbble.com/Valentinvalentin", target='_blank').link Dribbble
+							a(href="https://dribbble.com/Valentinvalentin", target='_blank', title="Vers mon profil Dribbble").link Dribbble
 							| , 
-							a(href="http://codepen.io/asstor_/", target='_blank').link Codepen
+							a(href="http://codepen.io/asstor_/", target='_blank', title="Vers mon profil Codepen").link Codepen
 							|  et 
-							a(href="http://instagram.com/valentinvalentin_/", target='_blank').link Instagram
+							a(href="http://instagram.com/valentinvalentin_/", target='_blank', title="Vers mon profil Instagram").link Instagram
 							| .
 		section#work
 			.container
@@ -87,30 +106,30 @@ html
 						.element
 							div(class="element--" + work.number).background
 							h3.title #{work.name}
-							a(href="#{work.url}", target='_blank').more En voir plus
+							a(href="#{work.url}", target='_blank', title="#{work.name}").more En voir plus
 		#transition
-		section#contact
-			p.col-md-4 Appelle moi : <br>
-				a(href="tel:0649233816").link 06 49 23 38 16
-			p.col-md-4 Envoie moi un pigeon : <br>
-				a(href="http://tinyurl.com/nrvs938", target='_blank').link 4 rue du Professeur Esclangon 33600, Pessac
-			p.col-md-4 Écris moi : <br>
-				a(href="mailto:v.galmand@gmail.com").link v.galmand@gmail.com
+		footer#contact
+			h5.col-md-4 Appelle moi : <br>
+				a(href="tel:0649233816", title="Appelle moi").link 06 49 23 38 16
+			h5.col-md-4 Envoie moi un pigeon : <br>
+				a(href="http://tinyurl.com/nrvs938", target='_blank', title="Voir ou j'habite").link 4 rue du Professeur Esclangon 33600, Pessac
+			h5.col-md-4 Écris moi : <br>
+				a(href="mailto:v.galmand@gmail.com", title="Envoyez moi un mail").link v.galmand@gmail.com
 			.col-md-12
 				ul
 					li.dib
-						a(href='https://www.linkedin.com/in/valentingalmand', target='_blank').icon-linkedin
+						a(href='https://www.linkedin.com/in/valentingalmand', target='_blank', title="Vers mon profil LinkedIn").icon-linkedin
 					li.dib
-						a(href='https://twitter.com/vgalmand', target='_blank').icon-twitter
+						a(href='https://twitter.com/vgalmand', target='_blank', title="Vers mon profil Twitter").icon-twitter
 					li.dib
-						a(href='https://plus.google.com/u/0/+ValentinGalmand/posts', target='_blank').icon-gplus
+						a(href='https://plus.google.com/u/0/+ValentinGalmand/posts', target='_blank', title="Vers mon profil Google Plus").icon-gplus
 					li.dib
-						a(href='https://github.com/valentingalmand', target='_blank').icon-github
+						a(href='https://github.com/valentingalmand', target='_blank', title="Vers mon profil Github").icon-github
 					li.dib
-						a(href='http://codepen.io/asstor_/', target='_blank').icon-codepen
+						a(href='http://codepen.io/asstor_/', target='_blank', title="Vers mon profil Codepen").icon-codepen
 					li.dib
-						a(href='http://instagram.com/valentinvalentin_/', target='_blank').icon-instagram
+						a(href='http://instagram.com/valentinvalentin_/', target='_blank', title="Vers mon profil Instagram").icon-instagram
 					li.dib
-						a(href='https://dribbble.com/Valentinvalentin', target='_blank').icon-dribbble
+						a(href='https://dribbble.com/Valentinvalentin', target='_blank', title="Vers mon profil Dribbble").icon-dribbble
 	script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 	script(type="text/javascript", src="js/main.js")
