@@ -177,9 +177,9 @@ header {
       .element > * {
         opacity: 0; } }
   .element .title {
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     left: 50%;
     top: 20px;
     color: #fff;
@@ -191,7 +191,7 @@ header {
             transition: all 250ms; }
     @media (min-width: 1025px) {
       .element .title {
-        top: 0; } }
+        top: 60%; } }
   .element .more {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -216,7 +216,7 @@ header {
       width: 100%;
       position: absolute;
       height: 100px;
-      background: rgba(240, 240, 241, 0.8);
+      background: #f0f0f1;
       top: -150px;
       left: 0;
       -webkit-transform: skewY(15deg);
@@ -244,28 +244,28 @@ header {
       .element:hover > * {
         opacity: 1; }
       .element:hover .title {
-        top: -10px; }
+        top: 50%; }
       .element:hover .more {
         bottom: -17px; }
       .element:hover .background {
         opacity: 0.6; } }
   .element--one {
-    background: url("https://download.unsplash.com/8/tylerfinck-bwgrass.jpg") no-repeat center center;
+    background: url("../img/meije.jpg") no-repeat center center;
     background-size: cover; }
   .element--two {
-    background: url("https://download.unsplash.com/7/a-long-walk.jpg") no-repeat center center;
+    background: url("../img/bambaataa.jpg") no-repeat center center;
     background-size: cover; }
   .element--three {
-    background: url("https://download.unsplash.com/5/pier.JPG") no-repeat center center;
+    background: url("../img/over.jpg") no-repeat center center;
     background-size: cover; }
   .element--four {
-    background: url("https://download.unsplash.com/9/bob-van-aubel-ray-bans.jpg") no-repeat center center;
+    background: url("../img/material.jpg") no-repeat center center;
     background-size: cover; }
   .element--five {
-    background: url("https://download.unsplash.com/8/tylerfinck-bwgrass.jpg") no-repeat center center;
+    background: url("../img/submit.jpg") no-repeat center center;
     background-size: cover; }
   .element--six {
-    background: url("https://download.unsplash.com/7/a-long-walk.jpg") no-repeat center center;
+    background: url("../img/quote.jpg") no-repeat center center;
     background-size: cover; }
 
 .about--block {
