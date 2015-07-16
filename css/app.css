@@ -5,10 +5,16 @@ body {
   background: #1e1c26;
   color: #f0f0f1;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   font-weight: lighter;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 a {
   color: #f0f0f1;
@@ -47,7 +53,7 @@ a {
         opacity: 1; } }
 
 section {
-  padding: 20px 0; }
+  padding-bottom: 90px; }
 
 #transition {
   background: -webkit-linear-gradient(#1e1c26 0%, rgba(43, 40, 88, 0.5) 100%);
@@ -95,6 +101,141 @@ section {
       .button:hover:after {
         top: -30px; } }
 
+@media (min-width: 1025px) {
+  .scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #f0f0f1;
+    z-index: 10; }
+    .scrollToTop:hover {
+      border-color: #a63451;
+      color: #a63451;
+      box-shadow: 0 10px 20px #151324;
+      bottom: 40px; }
+    .scrollToTop::after, .scrollToTop::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+          -ms-transform: translateY(-50%) translateX(-50%);
+              transform: translateY(-50%) translateX(-50%);
+      width: 10px;
+      border: 1px solid; }
+    .scrollToTop::after {
+      -webkit-transform: translateY(-50%) translateX(-50%) rotateZ(-45deg);
+              transform: translateY(-50%) translateX(-50%) rotateZ(-45deg);
+      left: 11px; }
+    .scrollToTop::before {
+      -webkit-transform: translateY(-50%) translateX(-50%) rotateZ(45deg);
+              transform: translateY(-50%) translateX(-50%) rotateZ(45deg);
+      left: 17px; }
+    .scrollToTop--is-active {
+      opacity: 0.8;
+      -webkit-animation-name: bounceInUp;
+              animation-name: bounceInUp;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; }
+    .scrollToTop--is-gone {
+      -webkit-animation-name: bounceOutUp;
+              animation-name: bounceOutUp;
+      -webkit-animation-duration: 0.8s;
+              animation-duration: 0.8s;
+      -webkit-animation-fill-mode: both;
+              animation-fill-mode: both; } }
+@-webkit-keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+@keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0);
+            transform: translate3d(0, 3000px, 0); }
+  60% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  75% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0); }
+  90% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes bounceOutUp {
+  0%, 20%, 40%, 45%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0.8; }
+  20% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  40%, 45% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0); } }
+@keyframes bounceOutUp {
+  0%, 20%, 40%, 45%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0.8; }
+  20% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0); }
+  40%, 45% {
+    opacity: 0.8;
+    -webkit-transform: translate3d(0, 20px, 0);
+            transform: translate3d(0, 20px, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+            transform: translate3d(0, -2000px, 0); } }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 nav {
   position: absolute;
   text-align: center;
@@ -146,8 +287,8 @@ nav {
       color: #a63451; } }
 
 header {
-  background: -webkit-linear-gradient(top, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
-  background: linear-gradient(to bottom, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("https://download.unsplash.com/22/open-door.JPG") no-repeat center center;
+  background: -webkit-linear-gradient(top, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("../img/header.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("../img/header.jpg") no-repeat center center;
   background-size: cover;
   height: 220px; }
   @media (min-width: 1025px) {
@@ -187,7 +328,7 @@ header {
             transform: translateX(-50%);
     left: 50%;
     top: 20px;
-    color: #fff;
+    color: #f0f0f1;
     font-weight: bolder;
     letter-spacing: 1px;
     font-size: 1.5rem;
