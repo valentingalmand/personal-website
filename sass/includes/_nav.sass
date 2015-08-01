@@ -5,7 +5,7 @@ nav
 		text-align: right
 	+md
 		text-align: right
-	top: 20px
+	top: 30px
 	width: 100%
 	.name
 		text-align: center
@@ -13,10 +13,9 @@ nav
 			text-align: left
 		+md
 			text-align: left
-		line-height: 40px
-		height: 40px
-		font-weight: lighter
-		letter-spacing: 1px
+		margin: 0
+		letter-spacing: 2px
+		font-weight: bolder
 		text-transform: uppercase
 		font-size: $fz - 0.3
 .menu
@@ -25,19 +24,26 @@ nav
 			padding: 0 20px
 		+md
 			padding: 0 20px
-		margin: 0 10px
-		line-height: 40px
-		height: 40px
+		margin: 0 7px
 		list-style: none
 		+transition
 		&:last-child
 			a
 				color: $r
+				+sm
+					border: 1px solid
+					padding: 10px 20px
+					border-radius: 20px
+				+md
+					&:hover
+						color: $b
 	&--link
 		font-weight: lighter
-		letter-spacing: 1px
+		letter-spacing: 2px
 		text-transform: uppercase
 		font-size: $fz - 0.3
+		font-weight: bolder
 		+md
 			&:hover
-				color: $r
+				color: $b
+				line-height: 2px

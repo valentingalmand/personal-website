@@ -1,0 +1,32 @@
+var works = [
+    {
+        "name": "Meije",
+        "url": "http://meije-ga.me",
+        "number": "one"
+    },
+    {
+        "name": "Looking for Bambaataa",
+        "url": "https://www.behance.net/gallery/19321457/BRAND-IDENTITY-LOOKING-FOR-BAMBAATAA",
+        "number": "two"
+    },
+    {
+        "name": "Hover Animation",
+        "url": "http://codepen.io/asstor_/full/MwbyZm",
+        "number": "three"
+    },
+    {
+        "name": "Material Design Menu",
+        "url": "http://codepen.io/asstor_/full/zGOwad",
+        "number": "four"
+    },
+    {
+        "name": "Submit Button",
+        "url": "http://codepen.io/asstor_/full/MYMZZK",
+        "number": "five"
+    },
+    {
+        "name": "Quote Animation Inspiration",
+        "url": "http://codepen.io/asstor_/full/doJvRR",
+        "number": "six"
+    }
+];

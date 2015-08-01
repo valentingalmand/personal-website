@@ -1,5 +1,5 @@
-- var menu = {'#about':'enchanté','#work':'projets','#contact':'contact'}
-- var works = { meije: {name: 'Meije', url: 'http://meije-ga.me', number:'one'}, bambaataa: {name: 'Looking for Bambaataa', url: 'https://www.behance.net/gallery/19321457/BRAND-IDENTITY-LOOKING-FOR-BAMBAATAA', number: 'two'}, Hover: {name: 'Hover Animation', url: 'http://codepen.io/asstor_/full/MwbyZm', number:'three'}, Menu: {name: 'Material Design Menu', url: 'http://codepen.io/asstor_/full/zGOwad', number: 'four'}, Submit: {name: 'Submit Button', url: 'http://codepen.io/asstor_/full/MYMZZK', number:'five'}, Quote: {name: 'Quote Animation Inspiration', url: 'http://codepen.io/asstor_/full/doJvRR', number:'six'} }
+include includes/data.jade
+include includes/mixins.jade
 
 doctype html
 html
@@ -29,109 +29,19 @@ html
 		link(rel="icon", type="image/png", href="favicon-96x96.png", sizes="96x96")
 		link(rel="icon", type="image/png", href="favicon-16x16.png", sizes="16x16")
 		link(rel="manifest", href="manifest.json")
-		meta(name="msapplication-TileColor", content="#00aba9")
+		meta(name="msapplication-TileColor", content="#ffffff")
 		meta(name="msapplication-TileImage", content="/mstile-144x144.png")
 		meta(name="theme-color", content="#ffffff")
+
 	body
 		a(href="#").scrollToTop
-		nav
-			.container
-				.col-md-6
-					h1.name Valentin Galmand
-				.col-md-6
-					ul.menu
-					- each val, index in menu
-						li.menu--items.dib
-							a.menu--link(href="#{index}", title="#{val}") #{val}
-		header
-		section#about
-			.container
-				.row
-					.about--block
-						.col-md-2
-							h2 Enchanté !
-						p.col-md-10 Je suis Valentin Galmand, born and raised à Bordeaux comme on dit de l'autre côté de l'Océan Atlantique. Actuellement en deuxième année en 
-							a(href="http://mmibordeaux.com", target='_blank', title="Vers le site du DUT MMI Bordeaux").link DUT MMI
-							| , j'adore essayer, explorer et apprendre de nouvelles choses en particulier sur l'animation d'interface et la magie du HTML mêlée au CSS. Passionné par le graphisme print comme web et par le développement front-end, je suis toujours à la recherche de nouvelles expériences. Si y on ajoute du vélo, beaucoup de dessin et d'handwritting saupoudré de trois expositions sans oublier un peu (beaucoup) de séries et de films. Un mix de tout ça et me voilà.
-							a(href="valentingalmand_cv.pdf", target='_blank', title="Télécharger mon CV").button télécharger mon cv
-					.about--block
-						.col-md-2
-							h2 Compétences
-						.col-md-2.col-xs-5
-							h4.cat Développement
-						.col-md-3.col-xs-5
-							ul
-								li
-									p HTML5 / Jade
-								li
-									p CSS3 / SASS
-								li
-									p Wordpress
-								li
-									p PHP / jQuery
-						.col-md-2.col-xs-5
-							h4.cat Design
-						.col-md-3.col-xs-5
-							ul
-								li
-									p Webdesign
-								li
-									p Identité Visuelle
-								li
-									p UI / UX Design
-								li
-									p Suite Adobe
-					.about--block
-						.col-md-2
-							h2 Récompenses
-						p.col-md-10 Plus tard, je mettrai mes awards ici.
-					.about--block
-						.col-md-2
-							h2 Et donc ?
-						p.col-md-10 On peut me retrouver sur 
-							a(href="https://www.linkedin.com/in/valentingalmand", target='_blank', title="Vers mon profil LinkedIn").link LinkedIn
-							| , 
-							a(href="https://twitter.com/vgalmand", target='_blank', title="Vers mon profil Twitter").link Twitter
-							| , 
-							a(href="https://dribbble.com/Valentinvalentin", target='_blank', title="Vers mon profil Dribbble").link Dribbble
-							| , 
-							a(href="http://codepen.io/asstor_/", target='_blank', title="Vers mon profil Codepen").link Codepen
-							|  et 
-							a(href="http://instagram.com/valentinvalentin_/", target='_blank', title="Vers mon profil Instagram").link Instagram
-							| .
-		section#work
-			.container
-				.row
-				- each work in works
-					.col-sm-6.col-xs-12
-						.element
-							div(class="element--" + work.number).background
-							h3.title #{work.name}
-							a(href="#{work.url}", target='_blank', title="#{work.name}").more En voir plus
-		#transition
-		footer#contact
-			h5.col-md-4 Appelle moi : <br>
-				a(href="tel:0649233816", title="Appelle moi").link 06 49 23 38 16
-			h5.col-md-4 Envoie moi un pigeon : <br>
-				a(href="http://tinyurl.com/nrvs938", target='_blank', title="Voir ou j'habite").link 4 rue du Professeur Esclangon 33600, Pessac
-			h5.col-md-4 Écris moi : <br>
-				a(href="mailto:v.galmand@gmail.com", title="Envoyez moi un mail").link v.galmand@gmail.com
-			.col-md-12
-				ul
-					li.dib
-						a(href='https://www.linkedin.com/in/valentingalmand', target='_blank', title="Vers mon profil LinkedIn").icon-linkedin
-					li.dib
-						a(href='https://twitter.com/vgalmand', target='_blank', title="Vers mon profil Twitter").icon-twitter
-					li.dib
-						a(href='https://plus.google.com/u/0/+ValentinGalmand/posts', target='_blank', title="Vers mon profil Google Plus").icon-gplus
-					li.dib
-						a(href='https://github.com/valentingalmand', target='_blank', title="Vers mon profil Github").icon-github
-					li.dib
-						a(href='http://codepen.io/asstor_/', target='_blank', title="Vers mon profil Codepen").icon-codepen
-					li.dib
-						a(href='http://instagram.com/valentinvalentin_/', target='_blank', title="Vers mon profil Instagram").icon-instagram
-					li.dib
-						a(href='https://dribbble.com/Valentinvalentin', target='_blank', title="Vers mon profil Dribbble").icon-dribbble
+	
+		include includes/nav.jade
+		include includes/header.jade
+		include includes/about.jade
+		include includes/works.jade
+		include includes/contact.jade
+
 	script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 	script(type="text/javascript", src="js/main.js")
 	script.

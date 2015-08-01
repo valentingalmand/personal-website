@@ -1,0 +1,6 @@
+mixin listp(element)
+    li
+        p= element
+
+mixin link(link, name, classname)
+    a(href=link, target='_blank', title=name, class=classname)=name

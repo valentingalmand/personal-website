@@ -1,8 +1,15 @@
++md
+	.works:nth-child(2n+1)
+		padding-right: 0
+		padding-left: 25px
+	.works:nth-child(2n)
+		padding-right: 25px
+		padding-left: 0
 .element
 	height: 240px
 	position: relative
 	text-align: center
-	margin-bottom: 30px
+	margin-bottom: 45px
 	box-shadow: 0 0 0 rgba($d_v, 0)
 	+transition
 	& > *
@@ -74,21 +81,34 @@
 				bottom: -17px
 			.background
 				opacity: 0.6
+				background-size: 110% 110%
 	&--one
 		background: url("../img/meije.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%
 	&--two
 		background: url("../img/bambaataa.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%
 	&--three
 		background: url("../img/over.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%
 	&--four
 		background: url("../img/material.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%
 	&--five
 		background: url("../img/submit.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%
 	&--six
 		background: url("../img/quote.jpg") no-repeat center center
 		background-size: cover
+		+md
+			background-size: 100% 100%

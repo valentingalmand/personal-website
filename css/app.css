@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display|Roboto:500,300,400);
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-seriffont;
   background: #1e1c26;
   color: #f0f0f1;
   font-size: 1.5rem;
@@ -19,18 +19,19 @@ body {
 a {
   color: #f0f0f1;
   cursor: pointer;
+  font-weight: 600;
   text-decoration: none;
   -webkit-transition: all 250ms;
           transition: all 250ms; }
   @media (min-width: 1025px) {
     a:hover {
-      color: #a63451;
+      color: #d02b55;
       text-decoration: none; } }
 
 .link {
   position: relative;
   opacity: 0.8;
-  color: #a63451;
+  color: #d02b55;
   letter-spacing: 1px;
   font-weight: 300; }
   .link::after {
@@ -92,8 +93,8 @@ section {
             transition: all 250ms; }
   @media (min-width: 1025px) {
     .button:hover {
-      border-color: #a63451;
-      color: #a63451;
+      border-color: #d02b55;
+      color: #d02b55;
       box-shadow: 0 10px 20px #151324;
       -webkit-transform: translateY(-10px);
           -ms-transform: translateY(-10px);
@@ -112,8 +113,8 @@ section {
     border: 1px solid #f0f0f1;
     z-index: 10; }
     .scrollToTop:hover {
-      border-color: #a63451;
-      color: #a63451;
+      border-color: #d02b55;
+      color: #d02b55;
       box-shadow: 0 10px 20px #151324;
       bottom: 40px; }
     .scrollToTop::after, .scrollToTop::before {
@@ -239,7 +240,7 @@ section {
 nav {
   position: absolute;
   text-align: center;
-  top: 20px;
+  top: 30px;
   width: 100%; }
   @media (min-width: 768px) {
     nav {
@@ -249,10 +250,9 @@ nav {
       text-align: right; } }
   nav .name {
     text-align: center;
-    line-height: 40px;
-    height: 40px;
-    font-weight: lighter;
-    letter-spacing: 1px;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: bolder;
     text-transform: uppercase;
     font-size: 1.2rem; }
     @media (min-width: 768px) {
@@ -263,9 +263,7 @@ nav {
         text-align: left; } }
 
 .menu--items {
-  margin: 0 10px;
-  line-height: 40px;
-  height: 40px;
+  margin: 0 7px;
   list-style: none;
   -webkit-transition: all 250ms;
           transition: all 250ms; }
@@ -276,15 +274,25 @@ nav {
     .menu--items {
       padding: 0 20px; } }
   .menu--items:last-child a {
-    color: #a63451; }
+    color: #d02b55; }
+    @media (min-width: 768px) {
+      .menu--items:last-child a {
+        border: 1px solid;
+        padding: 10px 20px;
+        border-radius: 20px; } }
+    @media (min-width: 1025px) {
+      .menu--items:last-child a:hover {
+        color: #f0f0f1; } }
 .menu--link {
   font-weight: lighter;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-weight: bolder; }
   @media (min-width: 1025px) {
     .menu--link:hover {
-      color: #a63451; } }
+      color: #f0f0f1;
+      line-height: 2px; } }
 
 header {
   background: -webkit-linear-gradient(top, rgba(43, 40, 88, 0.5) 0%, rgba(21, 19, 36, 0.5) 100%), url("../img/header.jpg") no-repeat center center;
@@ -308,11 +316,19 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px; }
 
+@media (min-width: 1025px) {
+  .works:nth-child(2n+1) {
+    padding-right: 0;
+    padding-left: 25px; }
+
+  .works:nth-child(2n) {
+    padding-right: 25px;
+    padding-left: 0; } }
 .element {
   height: 240px;
   position: relative;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   box-shadow: 0 0 0 rgba(21, 19, 36, 0);
   -webkit-transition: all 250ms;
           transition: all 250ms; }
@@ -375,8 +391,8 @@ header {
               transition: all 250ms; }
     @media (min-width: 1025px) {
       .element .more:hover {
-        border-color: #a63451;
-        color: #a63451;
+        border-color: #d02b55;
+        color: #d02b55;
         box-shadow: 0 10px 20px #151324;
         bottom: -10px !important; }
         .element .more:hover:after {
@@ -397,29 +413,50 @@ header {
       .element:hover .more {
         bottom: -17px; }
       .element:hover .background {
-        opacity: 0.6; } }
+        opacity: 0.6;
+        background-size: 110% 110%; } }
   .element--one {
     background: url("../img/meije.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--one {
+        background-size: 100% 100%; } }
   .element--two {
     background: url("../img/bambaataa.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--two {
+        background-size: 100% 100%; } }
   .element--three {
     background: url("../img/over.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--three {
+        background-size: 100% 100%; } }
   .element--four {
     background: url("../img/material.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--four {
+        background-size: 100% 100%; } }
   .element--five {
     background: url("../img/submit.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--five {
+        background-size: 100% 100%; } }
   .element--six {
     background: url("../img/quote.jpg") no-repeat center center;
     background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--six {
+        background-size: 100% 100%; } }
 
 .about--block {
   padding: 10px 0;
   overflow: hidden; }
+  .about--block .col-md-10 {
+    text-align: justify; }
   .about--block h2 {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -434,13 +471,13 @@ header {
       margin: 10px auto; }
     @media (min-width: 768px) {
       .about--block h2 {
-        text-align: right;
+        text-align: left;
         margin-top: 0; }
         .about--block h2::after {
           display: none; } }
     @media (min-width: 1025px) {
       .about--block h2 {
-        text-align: right;
+        text-align: left;
         margin-top: 0; }
         .about--block h2::after {
           display: none; } }
