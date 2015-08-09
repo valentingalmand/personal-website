@@ -1,9 +1,12 @@
 section#work
     .container
-        .row
+        .col-md-12
+            h2 Mes projets
+    .container
+        .clearfix
         - each work in works
             .col-sm-6.col-xs-12.works
-                .element
+                a(href="#{work.url}", target='_blank', title="#{work.name}").element
                     div(class="element--" + work.number).background
                     h3.title #{work.name}
-                    a(href="#{work.url}", target='_blank', title="#{work.name}").more En voir plus
+                    .more En voir plus

@@ -12,3 +12,8 @@
 =md
 	@media (min-width: 1025px)
 		@content
+=bg-element($url)
+	background: url($url) no-repeat center center
+	background-size: cover
+	+md
+		background-size: 100% 100%

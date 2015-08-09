@@ -25,13 +25,13 @@ a {
           transition: all 250ms; }
   @media (min-width: 1025px) {
     a:hover {
-      color: #d02b55;
+      color: #ff3366;
       text-decoration: none; } }
 
 .link {
   position: relative;
   opacity: 0.8;
-  color: #d02b55;
+  color: #ff3366;
   letter-spacing: 1px;
   font-weight: 300; }
   .link::after {
@@ -54,12 +54,7 @@ a {
         opacity: 1; } }
 
 section {
-  padding-bottom: 90px; }
-
-#transition {
-  background: -webkit-linear-gradient(#1e1c26 0%, rgba(43, 40, 88, 0.5) 100%);
-  background: linear-gradient(#1e1c26 0%, rgba(43, 40, 88, 0.5) 100%);
-  height: 250px; }
+  padding-bottom: 110px; }
 
 .dib {
   display: inline-block; }
@@ -93,12 +88,9 @@ section {
             transition: all 250ms; }
   @media (min-width: 1025px) {
     .button:hover {
-      border-color: #d02b55;
-      color: #d02b55;
-      box-shadow: 0 10px 20px #151324;
-      -webkit-transform: translateY(-10px);
-          -ms-transform: translateY(-10px);
-              transform: translateY(-10px); }
+      border-color: #ff3366;
+      color: #ff3366;
+      box-shadow: 0 10px 20px -5px rgba(21, 19, 36, 0.4); }
       .button:hover:after {
         top: -30px; } }
 
@@ -113,8 +105,8 @@ section {
     border: 1px solid #f0f0f1;
     z-index: 10; }
     .scrollToTop:hover {
-      border-color: #d02b55;
-      color: #d02b55;
+      border-color: #ff3366;
+      color: #ff3366;
       box-shadow: 0 10px 20px #151324;
       bottom: 40px; }
     .scrollToTop::after, .scrollToTop::before {
@@ -247,7 +239,8 @@ nav {
       text-align: right; } }
   @media (min-width: 1025px) {
     nav {
-      text-align: right; } }
+      text-align: right;
+      top: 60px; } }
   nav .name {
     text-align: center;
     margin: 0;
@@ -274,7 +267,7 @@ nav {
     .menu--items {
       padding: 0 20px; } }
   .menu--items:last-child a {
-    color: #d02b55; }
+    color: #ff3366; }
     @media (min-width: 768px) {
       .menu--items:last-child a {
         border: 1px solid;
@@ -291,7 +284,7 @@ nav {
   font-weight: bolder; }
   @media (min-width: 1025px) {
     .menu--link:hover {
-      color: #f0f0f1;
+      color: #ff3366;
       line-height: 2px; } }
 
 header {
@@ -301,7 +294,7 @@ header {
   height: 220px; }
   @media (min-width: 1025px) {
     header {
-      height: 90vh; } }
+      height: 50vh; } }
 
 .wrap {
   position: absolute;
@@ -324,8 +317,15 @@ header {
   .works:nth-child(2n) {
     padding-right: 25px;
     padding-left: 0; } }
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px; }
+
 .element {
   height: 240px;
+  display: block;
   position: relative;
   text-align: center;
   margin-bottom: 45px;
@@ -371,9 +371,12 @@ header {
     font-weight: lighter;
     letter-spacing: 4px;
     font-size: 1.2rem;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: all 250ms;
+            transition: all 250ms; }
     @media (min-width: 1025px) {
       .element .more {
+        opacity: 0;
         bottom: 0; } }
     .element .more:after {
       content: "";
@@ -389,14 +392,6 @@ header {
               transform: skewY(15deg);
       -webkit-transition: all 250ms;
               transition: all 250ms; }
-    @media (min-width: 1025px) {
-      .element .more:hover {
-        border-color: #d02b55;
-        color: #d02b55;
-        box-shadow: 0 10px 20px #151324;
-        bottom: -10px !important; }
-        .element .more:hover:after {
-          top: -30px; } }
   .element .background {
     width: 100%;
     height: 100%;
@@ -411,12 +406,18 @@ header {
       .element:hover .title {
         top: 50%; }
       .element:hover .more {
-        bottom: -17px; }
+        opacity: 1;
+        bottom: 20px;
+        border-color: #ff3366;
+        color: #ff3366;
+        box-shadow: 0 10px 20px -5px rgba(21, 19, 36, 0.4); }
+        .element:hover .more:after {
+          top: -30px; }
       .element:hover .background {
         opacity: 0.6;
         background-size: 110% 110%; } }
   .element--one {
-    background: url("../img/meije.jpg") no-repeat center center;
+    background: url("../img/meije.gif") no-repeat center center;
     background-size: cover; }
     @media (min-width: 1025px) {
       .element--one {
@@ -428,28 +429,34 @@ header {
       .element--two {
         background-size: 100% 100%; } }
   .element--three {
-    background: url("../img/over.jpg") no-repeat center center;
+    background: url("../img/hover.gif") no-repeat center center;
     background-size: cover; }
     @media (min-width: 1025px) {
       .element--three {
         background-size: 100% 100%; } }
   .element--four {
-    background: url("../img/material.jpg") no-repeat center center;
+    background: url("../img/material.gif") no-repeat center center;
     background-size: cover; }
     @media (min-width: 1025px) {
       .element--four {
         background-size: 100% 100%; } }
   .element--five {
-    background: url("../img/submit.jpg") no-repeat center center;
+    background: url("../img/submit.gif") no-repeat center center;
     background-size: cover; }
     @media (min-width: 1025px) {
       .element--five {
         background-size: 100% 100%; } }
   .element--six {
-    background: url("../img/quote.jpg") no-repeat center center;
+    background: url("../img/quote.gif") no-repeat center center;
     background-size: cover; }
     @media (min-width: 1025px) {
       .element--six {
+        background-size: 100% 100%; } }
+  .element--seven {
+    background: url("../img/musicplayer.gif") no-repeat center center;
+    background-size: cover; }
+    @media (min-width: 1025px) {
+      .element--seven {
         background-size: 100% 100%; } }
 
 .about--block {
@@ -490,8 +497,19 @@ header {
 
 #contact {
   text-align: center;
-  background: rgba(43, 40, 88, 0.5);
+  background: rgba(49, 45, 61, 0.5);
   overflow: hidden;
   padding-bottom: 30px; }
   #contact ul {
     margin-top: 20px; }
+  #contact a {
+    color: #f0f0f1;
+    margin: 0 10px;
+    font-weight: lighter; }
+    #contact a:hover {
+      color: #ff3366; }
+
+.transition {
+  background: -webkit-linear-gradient(#1e1c26 0%, rgba(49, 45, 61, 0.5) 100%);
+  background: linear-gradient(#1e1c26 0%, rgba(49, 45, 61, 0.5) 100%);
+  height: 120px; }
