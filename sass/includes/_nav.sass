@@ -1,10 +1,7 @@
 nav
 	position: absolute
-	text-align: center
-	+sm
-		text-align: right
+	text-align: right
 	+md
-		text-align: right
 		top: 60px
 	top: 30px
 	width: 100%
@@ -20,6 +17,9 @@ nav
 		text-transform: uppercase
 		font-size: $fz - 0.3
 .menu
+	margin-top: 20px
+	+sm
+		margin-top: 0
 	&--items
 		+sm
 			padding: 0 20px
@@ -27,6 +27,9 @@ nav
 			padding: 0 20px
 		margin: 0 7px
 		list-style: none
+		display: block
+		+sm
+			display: inline-block
 		+transition
 		&:last-child
 			a
@@ -36,7 +39,7 @@ nav
 					padding: 10px 20px
 					border-radius: 20px
 				+md
-					&:hover
+					&:hover, &:focus, &:active
 						color: $b
 	&--link
 		font-weight: lighter
@@ -44,7 +47,10 @@ nav
 		text-transform: uppercase
 		font-size: $fz - 0.3
 		font-weight: bolder
+		padding: 10px 10px
 		+md
-			&:hover
+			border-bottom: 1px solid
+			&:hover, &:focus, &:active
 				color: $r
 				line-height: 2px
+// entre 1200 et 991 not goot

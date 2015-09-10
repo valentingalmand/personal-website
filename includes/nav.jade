@@ -1,8 +1,8 @@
 nav
     .container
-        .col-md-6
+        .col-md-6.col-sm-3
             h1.name Valentin Galmand
-        .col-md-6
+        .col-md-6.col-sm-9
             ul.menu
-            - each val, index in menu
+              - each val, index in menu
                 li.menu--items.dib: a.menu--link(href="#{index}", title="#{val}") #{val}

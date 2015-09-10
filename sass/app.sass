@@ -32,9 +32,12 @@ a
 	text-decoration: none
 	+transition
 	+md
-		&:hover
+		&:hover, &:focus, &:active
 			color: $r
 			text-decoration: none
+// h2, h3
+// 	font-family: $playfair
+// 	letter-spacing: 2px
 .link
 	position: relative
 	opacity: 0.8
@@ -52,7 +55,7 @@ a
 		opacity: 0
 		+transition
 	+md
-		&:hover
+		&:hover, &:focus, &:active
 			opacity: 1
 			color: $b
 			&:after
@@ -62,38 +65,84 @@ section
 	padding-bottom: 110px
 .dib
 	display: inline-block
+// .button
+// 	float: right
+// 	display: inline-block
+// 	color: $b
+// 	padding: 5px 10px
+// 	border: 1px solid
+// 	text-transform: uppercase
+// 	font-weight: lighter
+// 	letter-spacing: 4px
+// 	font-size: $fz - 0.3
+// 	overflow: hidden
+// 	margin: 20px 0
+// 	position: relative
+// 	&:before
+// 		content: ''
+// 		z-index: -1
+// 		width: 100%
+// 		position: absolute
+// 		height: 100px
+// 		background: rgba($b, 0.8)
+// 		top: -150px
+// 		left: 0
+// 		transform: skewY(15deg)
+// 		+transition
+// 	+md
+// 		&:hover
+// 			border-color: $r
+// 			color: $r
+// 			box-shadow: 0 10px 20px -5px rgba($d_v, 0.4)
+// 			// transform: translateY(-10px)
+// 			&:after
+// 				top: -30px
 .button
 	float: right
-	display: inline-block
-	color: $b
-	padding: 5px 10px
-	border: 1px solid
+	text-decoration: none
 	text-transform: uppercase
-	font-weight: lighter
+	color: #fff
 	letter-spacing: 4px
-	font-size: $fz - 0.3
-	overflow: hidden
-	margin: 45px 0
+	font:
+		family: 'Open Sans'
+		weight: lighter
+		size: $fz - 0.3
+	text-align: center
+	display: inline-block
+	padding: 5px 10px
+	margin: 20px 0
 	position: relative
-	&:after
-		content: ''
-		z-index: -1
-		width: 100%
+	z-index: 2
+	overflow: hidden
+	+transition
+	&:before, &:after
 		position: absolute
+		content: ''
+		display: block
+	&:before
+		top: -120px
+		left: 250px
+		z-index: -1
+		width: calc(100% + 140px)
 		height: 100px
-		background: rgba($b, 0.8)
-		top: -150px
-		left: 0
-		transform: skewY(15deg)
 		+transition
+		transform: skew(70deg)
+		background: $r
+	&:after
+		top: 0
+		left: 0
+		z-index: -2
+		width: calc(100% - 2px)
+		height: calc(100% - 2px)
+		border: 1px solid $b
 	+md
-		&:hover
-			border-color: $r
-			color: $r
-			box-shadow: 0 10px 20px -5px rgba($d_v, 0.4)
-			// transform: translateY(-10px)
-			&:after
-				top: -30px
+		&:hover, &:focus, &:active
+			color: $b
+			box-shadow: 0 5px 10px 5px rgba($d_v, 0.6)
+			&:before
+				left: -50px
+				top: -20px
+
 +md
 	.scrollToTop
 		position: fixed
@@ -104,7 +153,7 @@ section
 		height: 30px
 		border: 1px solid $b
 		z-index: 10
-		&:hover
+		&:hover, &:focus, &:active
 			border-color: $r
 			color: $r
 			box-shadow: 0 10px 20px $d_v

@@ -4,6 +4,8 @@ var works = [
         "url": "http://meije-ga.me",
         "number": "one"
     },
+];
+var labs = [
     {
         "name": "Looking for Bambaataa",
         "url": "https://www.behance.net/gallery/19321457/BRAND-IDENTITY-LOOKING-FOR-BAMBAATAA",

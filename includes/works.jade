@@ -1,12 +1,29 @@
 section#work
     .container
-        .col-md-12
-            h2 Mes projets
-    .container
+        .col-md-4
+            h2 Projets
+    .container.p-0-mobile
         .clearfix
         - each work in works
-            .col-sm-6.col-xs-12.works
-                a(href="#{work.url}", target='_blank', title="#{work.name}").element
-                    div(class="element--" + work.number).background
+            .work-block
+                .col-sm-6.col-xs-12.works
+                    .element
+                      a(href='#{work.url}', target='_blank', title='#{work.link}', class="element--" + work.number).background
+                .col-sm-6.col-xs-12.works-info
                     h3.title #{work.name}
-                    .more En voir plus
+                    h4 #{work.type}
+                    p #{work.description}
+                    a(href='#{work.url}', target='_blank', title='#{work.link}', class='button') #{work.link}
+section#labs
+    .container
+        .col-md-4
+            h2 Créations codepen
+    .container-fluid
+        .clearfix
+        .row
+        - each lab in labs
+            .col-sm-3.col-xs-12.labs
+                a(href="#{lab.url}", target='_blank', title="#{lab.name}").element
+                  div(class="element--" + lab.number).background
+                  h3.title #{lab.name}
+                  .more Jouer avec

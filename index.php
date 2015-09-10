@@ -199,34 +199,121 @@
       <div class="container">
         <h2>Contact</h2>
 
-      
+        <?php
+          $action=$_REQUEST['action'];
+          if ($action=="") {
+        ?>
+            <form action="" method="POST" enctype="multipart/form-data"  >
+              <input type="hidden" name="action" value="submit">
+              <div class="col-md-6 col-md-push-2 col-xs-12">
+                <label for="name">nom<span class="exposant"> *</span>
+                  <input type="text" name="name" id="name">
+                </label>
+                <label for="email">email<span class="exposant"> *</span>
+                  <input type="email" name="email" id="email">
+                </label>
+                <label for="message">message<span class="exposant"> *</span>
+                  <textarea name="message" id="message"></textarea>
+                </label>
+              </div>
+              <div class="col-md-2 col-md-push-2 contact-infos">
+                <ul>
+                  <li class="dib"><a href="mailto:v.galmand@gmail.com" title="Envoyer un mail" class="icon-mail">mail</a></li>
+                  <li class="dib"><a href="https://www.linkedin.com/in/valentingalmand" target="_blank" title="Vers mon profil LinkedIn" class="icon-linkedin">linkedin</a></li>
+                  <li class="dib"><a href="https://twitter.com/vgalmand" target="_blank" title="Vers mon profil Twitter" class="icon-twitter">twitter</a></li>
+                  <li class="dib"><a href="https://plus.google.com/u/0/+ValentinGalmand/posts" target="_blank" title="Vers mon profil Google Plus" class="icon-gplus">google plus</a></li>
+                  <li class="dib"><a href="https://github.com/valentingalmand" target="_blank" title="Vers mon profil Github" class="icon-github">github</a></li>
+                  <li class="dib"><a href="http://codepen.io/asstor_/" target="_blank" title="Vers mon profil Codepen" class="icon-codepen">codepen</a></li>
+                  <li class="dib"><a href="http://instagram.com/valentinvalentin_/" target="_blank" title="Vers mon profil Instagram" class="icon-instagram">instagram</a></li>
+                  <li class="dib"><a href="https://dribbble.com/Valentinvalentin" target="_blank" title="Vers mon profil Dribbble" class="icon-dribbble">dribbble</a></li>
+                </ul>
+                <button type="submit" class="button">Envoyer</button>
+              </div>
+            </form>
+          <?php
+            } else {
+              header('Location: http://valentingalmand.me/#contact');
 
-        <form action="#">
-          <div class="col-md-6 col-md-push-2 col-xs-12">
-            <label for="name">nom<span class="exposant"> *</span>
-              <input type="text" name="name" id="name">
-            </label>
-            <label for="email">email<span class="exposant"> *</span>
-              <input type="email" name="email" id="email">
-            </label>
-            <label for="message">message<span class="exposant"> *</span>
-              <textarea name="message" resi></textarea>
-            </label>
-          </div>
-          <div class="col-md-2 col-md-push-2 contact-infos">
-            <ul>
-              <li class="dib"><a href="mailto:v.galmand@gmail.com" title="Envoyer un mail" class="icon-mail">mail</a></li>
-              <li class="dib"><a href="https://www.linkedin.com/in/valentingalmand" target="_blank" title="Vers mon profil LinkedIn" class="icon-linkedin">linkedin</a></li>
-              <li class="dib"><a href="https://twitter.com/vgalmand" target="_blank" title="Vers mon profil Twitter" class="icon-twitter">twitter</a></li>
-              <li class="dib"><a href="https://plus.google.com/u/0/+ValentinGalmand/posts" target="_blank" title="Vers mon profil Google Plus" class="icon-gplus">google plus</a></li>
-              <li class="dib"><a href="https://github.com/valentingalmand" target="_blank" title="Vers mon profil Github" class="icon-github">github</a></li>
-              <li class="dib"><a href="http://codepen.io/asstor_/" target="_blank" title="Vers mon profil Codepen" class="icon-codepen">codepen</a></li>
-              <li class="dib"><a href="http://instagram.com/valentinvalentin_/" target="_blank" title="Vers mon profil Instagram" class="icon-instagram">instagram</a></li>
-              <li class="dib"><a href="https://dribbble.com/Valentinvalentin" target="_blank" title="Vers mon profil Dribbble" class="icon-dribbble">dribbble</a></li>
-            </ul>
-            <button type="submit" class="button">Envoyer</button>
-          </div>
-        </form>
+              $name=$_REQUEST['name'];
+              $email=$_REQUEST['email'];
+              $message=$_REQUEST['message'];
+              if (($name=="")||($email=="")||($message=="")) {
+                ?>
+<center><p>Il faut remplir tous les champs pour que le mail s'envoi !</p>
+  </center>                <form action="" method="POST" enctype="multipart/form-data"  >
+                  <input type="hidden" name="action" value="submit">
+                  <div class="col-md-6 col-md-push-2 col-xs-12">
+                    <label for="name">nom<span class="exposant"> *</span>
+                      <input type="text" name="name" id="name">
+                    </label>
+                    <label for="email">email<span class="exposant"> *</span>
+                      <input type="email" name="email" id="email">
+                    </label>
+                    <label for="message">message<span class="exposant"> *</span>
+                      <textarea name="message" id="message"></textarea>
+                    </label>
+                  </div>
+                  <div class="col-md-2 col-md-push-2 contact-infos">
+                    <ul>
+                      <li class="dib"><a href="mailto:v.galmand@gmail.com" title="Envoyer un mail" class="icon-mail">mail</a></li>
+                      <li class="dib"><a href="https://www.linkedin.com/in/valentingalmand" target="_blank" title="Vers mon profil LinkedIn" class="icon-linkedin">linkedin</a></li>
+                      <li class="dib"><a href="https://twitter.com/vgalmand" target="_blank" title="Vers mon profil Twitter" class="icon-twitter">twitter</a></li>
+                      <li class="dib"><a href="https://plus.google.com/u/0/+ValentinGalmand/posts" target="_blank" title="Vers mon profil Google Plus" class="icon-gplus">google plus</a></li>
+                      <li class="dib"><a href="https://github.com/valentingalmand" target="_blank" title="Vers mon profil Github" class="icon-github">github</a></li>
+                      <li class="dib"><a href="http://codepen.io/asstor_/" target="_blank" title="Vers mon profil Codepen" class="icon-codepen">codepen</a></li>
+                      <li class="dib"><a href="http://instagram.com/valentinvalentin_/" target="_blank" title="Vers mon profil Instagram" class="icon-instagram">instagram</a></li>
+                      <li class="dib"><a href="https://dribbble.com/Valentinvalentin" target="_blank" title="Vers mon profil Dribbble" class="icon-dribbble">dribbble</a></li>
+                    </ul>
+                    <button type="submit" class="button">Envoyer</button>
+                  </div>
+                </form>
+                <?php
+              } else {
+                header('Location: http://valentingalmand.me/#contact');
+
+                $from="From: $name<$email>\r\nReturn-path: $email";
+                $subject="[valentingalmand.me] ".$name." a prit contact";
+                mail("v.galmand@gmail.com", $subject, $message, $from);
+                $name= '';
+                $email= '';
+                $message= '';
+                ?>
+                <center>
+                  <p>Email envoyé ! Bon voyage petit mail !</p>
+            </center>
+                <form action="" method="POST" enctype="multipart/form-data"  >
+                  <input type="hidden" name="action" value="submit">
+                  <div class="col-md-6 col-md-push-2 col-xs-12">
+                    <label for="name">nom<span class="exposant"> *</span>
+                      <input type="text" name="name" id="name">
+                    </label>
+                    <label for="email">email<span class="exposant"> *</span>
+                      <input type="email" name="email" id="email">
+                    </label>
+                    <label for="message">message<span class="exposant"> *</span>
+                      <textarea name="message" id="message"></textarea>
+                    </label>
+                  </div>
+                  <div class="col-md-2 col-md-push-2 contact-infos">
+                    <ul>
+                      <li class="dib"><a href="mailto:v.galmand@gmail.com" title="Envoyer un mail" class="icon-mail">mail</a></li>
+                      <li class="dib"><a href="https://www.linkedin.com/in/valentingalmand" target="_blank" title="Vers mon profil LinkedIn" class="icon-linkedin">linkedin</a></li>
+                      <li class="dib"><a href="https://twitter.com/vgalmand" target="_blank" title="Vers mon profil Twitter" class="icon-twitter">twitter</a></li>
+                      <li class="dib"><a href="https://plus.google.com/u/0/+ValentinGalmand/posts" target="_blank" title="Vers mon profil Google Plus" class="icon-gplus">google plus</a></li>
+                      <li class="dib"><a href="https://github.com/valentingalmand" target="_blank" title="Vers mon profil Github" class="icon-github">github</a></li>
+                      <li class="dib"><a href="http://codepen.io/asstor_/" target="_blank" title="Vers mon profil Codepen" class="icon-codepen">codepen</a></li>
+                      <li class="dib"><a href="http://instagram.com/valentinvalentin_/" target="_blank" title="Vers mon profil Instagram" class="icon-instagram">instagram</a></li>
+                      <li class="dib"><a href="https://dribbble.com/Valentinvalentin" target="_blank" title="Vers mon profil Dribbble" class="icon-dribbble">dribbble</a></li>
+                    </ul>
+                    <button type="submit" class="button">Envoyer</button>
+                  </div>
+                </form>
+                <?php
+              }
+            }
+          ?>
+
+
       </div>
     </footer>
   </body>

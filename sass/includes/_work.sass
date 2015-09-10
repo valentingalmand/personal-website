@@ -1,21 +1,45 @@
+.container-fluid
+	margin: 0
+	padding: 0
+.labs
+	padding: 0
 +md
 	.works:nth-child(2n+1)
-		padding-right: 0
-		padding-left: 25px
+		// padding-right: 0
+		// padding-left: 25px
 	.works:nth-child(2n)
-		padding-right: 25px
-		padding-left: 0
-h2
-	text-align: center
+		// padding-right: 25px
+		// padding-left: 0
+h2, h3
+	// text-align: center
 	text-transform: uppercase
 	letter-spacing: 1px
-	margin-bottom: 40px
+#work, #labs, #contact
+	h2
+		margin-bottom: 40px
+	h3
+		// margin-bottom: 5px
+		display: inline-block
+		margin-top: 5px
+	h4
+		margin-bottom: 10px
+		text-transform: uppercase
+		letter-spacing: 1px
+		font-size: 12px
+		opacity: 0.6
+		display: inline-block
+		&::before
+			content: '/'
+			display: inline-block
+			margin-right: 5px
 .element
-	height: 240px
+	height: 180px
+	+sm
+		height: 240px
 	display: block
 	position: relative
-	text-align: center
-	margin-bottom: 45px
+	// text-align: center
+	// margin-bottom: 45px
 	box-shadow: 0 0 0 rgba($d_v, 0)
 	+transition
 	& > *
@@ -59,7 +83,7 @@ h2
 			width: 100%
 			position: absolute
 			height: 100px
-			background: rgba($b, 0.8)
+			background: rgba($r, 1)
 			top: -150px
 			left: 0
 			transform: skewY(15deg)
@@ -70,25 +94,6 @@ h2
 		height: 100%
 		opacity: 0.4
 		+transition
-	+md
-		&:hover
-			box-shadow: 0 10px 20px $d_v
-			& > *
-				opacity: 1
-			.title
-				top: 50%
-			.more
-				opacity: 1
-				bottom: 20px
-				border-color: $r
-				color: $r
-				box-shadow: 0 10px 20px -5px rgba($d_v, 0.4)
-				// bottom: -10px!important
-				&:after
-					top: -30px
-			.background
-				opacity: 0.6
-				background-size: 110% 110%
 	&--one
 		+bg-element("../img/meije.gif")
 	&--two
@@ -103,3 +108,47 @@ h2
 		+bg-element("../img/quote.gif")
 	&--seven
 		+bg-element("../img/musicplayer.gif")
+	&--nine
+		+bg-element("../img/rise2016.gif")
+.p-0-mobile
+	padding: 0
+	+sm
+		padding: 0 15px
+	.works-info
+		margin-top: 10px
+		padding: 0 30px
+		+sm
+			padding: 0 15px
+			margin: 0
+.work-block
+	overflow: hidden
+	margin-bottom: 30px
+.works
+	padding: 0
+	+sm
+		padding: 0 15px
+	.element
+		.background
+			opacity: 1
+.labs
+	.element
+		text-align: center
+		+md
+			&:hover, &:focus, &:active
+				box-shadow: 0 10px 20px $d_v
+				& > *
+					opacity: 1
+				.title
+					top: 50%
+				.more
+					opacity: 1
+					bottom: 20px
+					border-color: $r
+					color: $b
+					box-shadow: 0 10px 20px -5px rgba($d_v, 0.4)
+					// bottom: -10px!important
+					&:after
+						top: -30px
+				.background
+					opacity: 0.6
+					// background-size: 110% 110%

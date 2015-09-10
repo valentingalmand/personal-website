@@ -2,12 +2,25 @@
 footer#contact
     .container
         h2 Contact
-        ul
-            li.dib: a(href="mailto:v.galmand@gmail.com", title="Envoyer un mail") mail
-            li.dib: a(href='https://www.linkedin.com/in/valentingalmand', target='_blank', title="Vers mon profil LinkedIn").icon-linkedin
-            li.dib: a(href='https://twitter.com/vgalmand', target='_blank', title="Vers mon profil Twitter").icon-twitter
-            li.dib: a(href='https://plus.google.com/u/0/+ValentinGalmand/posts', target='_blank', title="Vers mon profil Google Plus").icon-gplus
-            li.dib: a(href='https://github.com/valentingalmand', target='_blank', title="Vers mon profil Github").icon-github
-            li.dib: a(href='http://codepen.io/asstor_/', target='_blank', title="Vers mon profil Codepen").icon-codepen
-            li.dib: a(href='http://instagram.com/valentinvalentin_/', target='_blank', title="Vers mon profil Instagram").icon-instagram
-            li.dib: a(href='https://dribbble.com/Valentinvalentin', target='_blank', title="Vers mon profil Dribbble").icon-dribbble
+        form(action="#")
+            .col-md-6.col-md-push-2.col-xs-12
+                label(for="name") nom
+                    span.exposant  *
+                    input(type="text", name="name", id="name")
+                label(for="email") email
+                    span.exposant  *
+                    input(type="email", name="email", id="email")
+                label(for="message") message
+                    span.exposant  *
+                    textarea(name="message", resi)
+            .col-md-2.col-md-push-2.contact-infos
+                ul
+                    li.dib: a(href="mailto:v.galmand@gmail.com", title="Envoyer un mail").icon-mail mail
+                    li.dib: a(href='https://www.linkedin.com/in/valentingalmand', target='_blank', title="Vers mon profil LinkedIn").icon-linkedin linkedin
+                    li.dib: a(href='https://twitter.com/vgalmand', target='_blank', title="Vers mon profil Twitter").icon-twitter twitter
+                    li.dib: a(href='https://plus.google.com/u/0/+ValentinGalmand/posts', target='_blank', title="Vers mon profil Google Plus").icon-gplus google plus
+                    li.dib: a(href='https://github.com/valentingalmand', target='_blank', title="Vers mon profil Github").icon-github github
+                    li.dib: a(href='http://codepen.io/asstor_/', target='_blank', title="Vers mon profil Codepen").icon-codepen codepen
+                    li.dib: a(href='http://instagram.com/valentinvalentin_/', target='_blank', title="Vers mon profil Instagram").icon-instagram instagram
+                    li.dib: a(href='https://dribbble.com/Valentinvalentin', target='_blank', title="Vers mon profil Dribbble").icon-dribbble dribbble
+                button(type="submit").button Envoyer
