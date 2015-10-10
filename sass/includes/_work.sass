@@ -77,6 +77,7 @@ h2, h3
 			opacity: 0
 			bottom: 0
 		+transition
+		transition-duration: 0.7s
 		&:after
 			content: ''
 			z-index: -1
@@ -134,7 +135,7 @@ h2, h3
 	.element
 		text-align: center
 		+md
-			&:hover, &:focus, &:active
+			&:hover, &:focus
 				box-shadow: 0 10px 20px $d_v
 				& > *
 					opacity: 1

@@ -4,11 +4,12 @@ include includes/mixins.jade
 doctype html
 html
 	head(lang="fr")
-		title Valentin Galmand | Portfolio | Graphiste et Développeur Front End | Bordeaux 
+		title Valentin Galmand | Intégrateur Front End et Webdesigner
 		meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-		meta(name="description", content="Valentin Galmand | Graphiste et Développeur Front End à Bordeaux - 06 49 23 38 16 | Passionné par le graphisme print et web, par le développement front-end.")
+		meta(name="description", content="Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux - 06 49 23 38 16 | Passionné par le graphisme print et web, par le développement front-end.")
 		meta(name="keywords", content="design, ui, ux, designer, front end, development, developpeur, html, css, bordeaux, junior, sass, js, wordpress, webdesite, webdesign, designer portfolio, portfolio, france, bordeaux, valentin galmand, galmand")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
+		//css
 		link(rel="stylesheet", href="css/reset.css", type="text/css")
 		link(rel="stylesheet", href="css/bootstrap.css", type="text/css")
 		link(rel="stylesheet", href="css/font.css", type="text/css")
@@ -32,7 +33,25 @@ html
 		meta(name="msapplication-TileColor", content="#ffffff")
 		meta(name="msapplication-TileImage", content="/mstile-144x144.png")
 		meta(name="theme-color", content="#ffffff")
+		link(rel='canonical', href='http://valentingalmand.me')
 
+		//google
+		meta(itemprop='name', content='Valentin Galmand | Intégrateur Front End et Webdesigner')
+		meta(itemprop='description', content='Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.')
+		meta(itemprop='image', content='http://valentingalmand.me/img/header.jpg')
+
+		//twitter
+		meta(name='twitter:card', content='summary')
+		meta(name='twitter:site', content='@vgalmand')
+		meta(name='twitter:title', content='Valentin Galmand | Intégrateur Front End et Webdesigner')
+		meta(name='twitter:description', content='Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.')
+		meta(name='twitter:image', content='http://valentingalmand.me/img/header.jpg')
+		//facebook
+		meta(property='og:title', content='Valentin Galmand | Intégrateur Front End et Webdesigner')
+		meta(property='og:type', content='website')
+		meta(property='og:url', content='http://valentingalmand.me/')
+		meta(property='og:image', content='http://valentingalmand.me/img/header.jpg')
+		meta(property='og:description', content='Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.')
 	body
 		a(href="#").scrollToTop
 	

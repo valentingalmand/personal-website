@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /AUTRE
+Disallow: /data
+Disallow: /font
+Disallow: /img
+Disallow: /public
+Disallow: /views
+
+Sitemap: http://www.mon-domaine.fr/sitemap.xml

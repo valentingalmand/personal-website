@@ -289,17 +289,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/bambaataa.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 49410,
-		"inputAbbreviatedPath": "\/img\/bambaataa.jpg",
-		"outputAbbreviatedPath": "\/img\/bambaataa.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/header.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -307,61 +296,6 @@
 		"initialSize": 77237,
 		"inputAbbreviatedPath": "\/img\/header.jpg",
 		"outputAbbreviatedPath": "\/img\/header.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/material.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4055,
-		"inputAbbreviatedPath": "\/img\/material.jpg",
-		"outputAbbreviatedPath": "\/img\/material.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/meije.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17205,
-		"inputAbbreviatedPath": "\/img\/meije.jpg",
-		"outputAbbreviatedPath": "\/img\/meije.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/over.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19243,
-		"inputAbbreviatedPath": "\/img\/over.jpg",
-		"outputAbbreviatedPath": "\/img\/over.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/quote.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13303,
-		"inputAbbreviatedPath": "\/img\/quote.jpg",
-		"outputAbbreviatedPath": "\/img\/quote.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/submit.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 5115,
-		"inputAbbreviatedPath": "\/img\/submit.jpg",
-		"outputAbbreviatedPath": "\/img\/submit.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -442,15 +376,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,

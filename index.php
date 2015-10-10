@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head lang="fr">
-    <title>Valentin Galmand | Portfolio | Graphiste et Développeur Front End | Bordeaux </title>
+    <title>Valentin Galmand | Intégrateur Front End et Webdesigner</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="description" content="Valentin Galmand | Graphiste et Développeur Front End à Bordeaux - 06 49 23 38 16 | Passionné par le graphisme print et web, par le développement front-end.">
+    <meta name="description" content="Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux - 06 49 23 38 16 | Passionné par le graphisme print et web, par le développement front-end.">
     <meta name="keywords" content="design, ui, ux, designer, front end, development, developpeur, html, css, bordeaux, junior, sass, js, wordpress, webdesite, webdesign, designer portfolio, portfolio, france, bordeaux, valentin galmand, galmand">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <!--css-->
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/font.css" type="text/css">
@@ -29,6 +30,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="http://valentingalmand.me">
+    <!--google-->
+    <meta itemprop="name" content="Valentin Galmand | Intégrateur Front End et Webdesigner">
+    <meta itemprop="description" content="Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.">
+    <meta itemprop="image" content="http://valentingalmand.me/img/header.jpg">
+    <!--twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@vgalmand">
+    <meta name="twitter:title" content="Valentin Galmand | Intégrateur Front End et Webdesigner">
+    <meta name="twitter:description" content="Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.">
+    <meta name="twitter:image" content="http://valentingalmand.me/img/header.jpg">
+    <!--facebook-->
+    <meta property="og:title" content="Valentin Galmand | Intégrateur Front End et Webdesigner">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://valentingalmand.me/">
+    <meta property="og:image" content="http://valentingalmand.me/img/header.jpg">
+    <meta property="og:description" content="Valentin Galmand | Intégrateur Front End et Webdesigner à Bordeaux | Passionné par le graphisme print et web, par le développement front-end.">
   </head>
   <body><a href="#" class="scrollToTop"></a>
     <nav>
@@ -53,7 +71,7 @@
             <h2>Enchanté !</h2>
           </div>
           <p class="col-md-10 col-xs-12">Je suis Valentin Galmand, <em>born and</em> raised à Bordeaux comme on dit de l'autre côté de l'Océan Atlantique. Actuellement en deuxième année en <a href="http://mmibordeaux.com" target="_blank" title="Vers le site du DUT MMI Bordeaux" class="link">DUT MMI</a>, j'adore essayer, explorer et apprendre de nouvelles choses en particulier sur l'animation d'interface et la magie du HTML mêlé au CSS. Passionné par le graphisme print comme web et par le développement front-end, je suis toujours à la recherche de nouvelles expériences. Si on y ajoute du vélo, beaucoup de dessin et d'handwritting saupoudré de quatre expositions sans oublier un peu (beaucoup) de séries et de films. Un mix de tout ça et me voilà.</p>
-          <div class="col-md-12">   <a href="valentingalmand_cv.pdf" target="_blank" title="Télécharger mon cv" class="button">Télécharger mon cv</a>
+          <div class="col-md-12">   <a href="GALMAND_CV.pdf" target="_blank" title="Télécharger mon cv" class="button">Télécharger mon cv</a>
           </div>
         </div>
         <div class="about--block">
@@ -157,12 +175,12 @@
         </div>
         <div class="work-block">
           <div class="col-sm-6 col-xs-12 works">
-            <div class="element"><a href="http://meije-ga.me" target="_blank" title="Tester le jeu" class="element--one background"></a></div>
+            <div class="element"><a href="http://www.mathieudebit.com/meije/" target="_blank" title="Tester le jeu" class="element--one background"></a></div>
           </div>
           <div class="col-sm-6 col-xs-12 works-info">
             <h3 class="title">Meije</h3>
             <h4>web</h4>
-            <p>Meije est un endless runner créé lors d'un projet dans le cadre du DUT MMI. Parcourez le monde avec  J'ai eu la chance d'être sur les deux pôles : développeur et background designer. Le jeu est designé sous Hexels et développé avec le framework javascript, Phaser.</p><a href="http://meije-ga.me" target="_blank" title="Tester le jeu" class="button">Tester le jeu</a>
+            <p>Meije est un endless runner créé lors d'un projet dans le cadre du DUT MMI. Parcourez le monde avec  J'ai eu la chance d'être sur les deux pôles : développeur et background designer. Le jeu est designé sous Hexels et développé avec le framework javascript, Phaser.</p><a href="http://www.mathieudebit.com/meije/" target="_blank" title="Tester le jeu" class="button">Tester le jeu</a>
           </div>
         </div>
       </div>
@@ -195,7 +213,7 @@
       </div>
     </section>
     <div class="transition"></div>
-    <footer id="contact">
+    <section id="contact">
       <div class="container">
         <h2>Contact</h2>
 
@@ -240,7 +258,7 @@
               if (($name=="")||($email=="")||($message=="")) {
                 ?>
 <center><p>Il faut remplir tous les champs pour que le mail s'envoi !</p>
-  </center>                <form action="" method="POST" enctype="multipart/form-data"  >
+</center>                <form action="#" method="POST" enctype="multipart/form-data"  >
                   <input type="hidden" name="action" value="submit">
                   <div class="col-md-6 col-md-push-2 col-xs-12">
                     <label for="name">nom<span class="exposant"> *</span>
@@ -278,9 +296,9 @@
                 $email= '';
                 $message= '';
                 ?>
-                <center>
+
                   <p>Email envoyé ! Bon voyage petit mail !</p>
-            </center>
+
                 <form action="" method="POST" enctype="multipart/form-data"  >
                   <input type="hidden" name="action" value="submit">
                   <div class="col-md-6 col-md-push-2 col-xs-12">
@@ -314,6 +332,15 @@
           ?>
 
 
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="col-md-12">
+          <center>
+            <p>Copyright © 2015 · All Rights Reserved · <a href="http://valentingalmand.me">valentingalmand.me</a></p>
+          </center>
+        </div>
       </div>
     </footer>
   </body>
